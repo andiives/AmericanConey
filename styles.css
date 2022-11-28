@@ -1,0 +1,413 @@
+/* Define Global Default Css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+    color: #000000;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Define Default Global Font Sizes */
+
+h1 {
+    font-size: 40px;
+    color: #000000;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    opacity: .7;
+    text-decoration: underline;
+}
+
+
+
+/*Define Global Helper Styles */
+
+.center {
+    text-align: center;
+}
+
+.margin-bottom_five {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    max-width: 600px;
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+
+.maxwidth {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+
+.loc {
+    max-width: 300px;
+    margin-left: 170px;
+    margin-top: 100px;
+}
+
+
+.merch {
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin-top: 350px;
+}
+
+.menu{
+    width: 900px;
+}
+
+/* Define Navigation Styles */
+
+nav {
+    background-color: #AE1F1F;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    padding-right: 20px;
+	position: sticky;
+	top: 0;
+    z-index: 10;
+}
+.nav-link {
+    color: #FFFFFF;
+    display: flex;
+    padding: 20px;
+}
+
+/* Define Hero Styles */
+
+.hero-container {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.hero-container_img {
+    width: 40%;
+    padding: 2%;
+}  
+
+.hero-container_img img {
+    width: 100%;
+}
+.hero-container_copy {
+    width: 60%;
+    padding: 5%;
+}
+
+/* Define Card Styles */
+
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 3px;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 15%;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 40%;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.card a {
+    text-decoration: none !important;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+.card-copy {
+    padding: 0 20px 20px 20px;
+
+}
+
+.case-study {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/*Define Case Study Styles*/
+
+
+.casestudy-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.casestudy-container_img {
+    width: 40%;
+    padding: 2%;
+}  
+
+.casestudy-container_img img {
+    width: 100%;
+}
+.casestudy-container_copy {
+    width: 60%;
+    padding: 5%;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 150px;
+  }
+
+  
+  .star {
+    position: relative;
+    z-index: 3;
+    bottom: -100;
+    left: -100;
+    max-width: 500px;
+    margin-left: 230px;
+  }
+  
+  .dog {
+    position: relative;
+    z-index: 2;
+    top: -450px;
+    left: 300px;
+  }
+
+  .blue {
+    position: absolute;
+    z-index: 2;
+    top: 1450px;
+    right: 150px;
+    width: 1100px;
+    height: 800px;
+  }
+
+  .polaroid {
+    position: absolute;
+    z-index: 4;
+    top: 1390px;
+    right: 610px;
+    width: 590px;
+  }
+
+  .coneybio {
+    position: absolute;
+    z-index: 5;
+    top: 1550px;
+    right: 230px;
+    width: 420px;
+    font-size: 20px;
+  }
+
+
+/* Define Footer Styles */
+
+footer {
+    background-color: #AE1F1F;
+    text-align: center;
+    padding: 40px;
+    color: #ffffff;
+}
+
+.copyright {
+   font-size: 10px;
+   margin-top: 30px;
+}
+
+
+/*Media Queries Which Tell the Code How to Resize */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+    
+    .hero-container {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .hero-container_img  {
+        min-width: 100%;
+    }
+
+    .hero-container_copy {
+        min-width: 100%;
+        margin: 20px;
+        padding: 0;
+        text-align:center;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .star {
+        position: relative;
+        z-index: 3;
+        bottom: -100;
+        left: -100;
+        max-width: 500px;
+        margin-left: 230px;
+      }
+      
+      .dog {
+        position: relative;
+        z-index: 2;
+        top: -450px;
+        left: 300px;
+      }
+    
+      .blue {
+        position: absolute;
+        z-index: 2;
+        top: 1450px;
+        right: 150px;
+        width: 1100px;
+        height: 800px;
+      }
+    
+      .polaroid {
+        position: absolute;
+        z-index: 4;
+        top: 1390px;
+        right: 610px;
+        width: 590px;
+      }
+    
+      .coneybio {
+        position: absolute;
+        z-index: 5;
+        top: 1550px;
+        right: 230px;
+        width: 420px;
+        font-size: 20px;
+      }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    p {
+        font-size: 14px;
+    }
+    
+    .hero-container_img {
+        width: 50%;
+    }
+    
+    .hero-container_copy {
+        width: 50%;
+     }
+
+    .card {
+        width: 40%;
+    }
+    
+    .card img {
+          width: 100%;
+    }
+
+    .star {
+        position: relative;
+        z-index: 3;
+        bottom: -100;
+        left: -100;
+        max-width: 500px;
+        margin-left: 230px;
+      }
+      
+      .dog {
+        position: relative;
+        z-index: 2;
+        top: -450px;
+        left: 300px;
+      }
+    
+      .blue {
+        position: absolute;
+        z-index: 2;
+        top: 1450px;
+        right: 150px;
+        width: 1100px;
+        height: 800px;
+      }
+    
+      .polaroid {
+        position: absolute;
+        z-index: 4;
+        top: 1390px;
+        right: 610px;
+        width: 590px;
+      }
+    
+      .coneybio {
+        position: absolute;
+        z-index: 5;
+        top: 1550px;
+        right: 230px;
+        width: 420px;
+        font-size: 20px;
+      }
+   
+}
